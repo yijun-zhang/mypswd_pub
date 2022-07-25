@@ -1,0 +1,11 @@
+{
+  "0": "success",
+  "1": "invalid client id",
+  "2": "email not match",
+  "3": "email and password not match",
+  "4": "email already exists",
+  "5": "invalid token",
+  "6": "invalid email",
+  "7": "not found",
+  "8": "user does not have this id"
+}

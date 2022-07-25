@@ -1,0 +1,404 @@
+{
+	"info": {
+		"_postman_id": "5def21bc-02c1-453f-8b8f-a88a45c1f4f3",
+		"name": "mypswd",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "15950887"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:5000/api/account",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"client_id\":\"gdghdfgjdkfgdfklghjdfruiwlvmcv674dvbbgd\",\n\"email\":\"tom2@gmail.com\",\n\"password\":\"123\",\n\"additional\":\"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/api/account"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"client_id\":\"gdghdfgjdkfgdfklghjdfruiwlvmcv674dvbbgd\",\n\"email\":\"tom2@gmail.com \",\n\"password\":\"123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/api/login"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/account",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTg3ODI2NzAsImlhdCI6MTY1ODY5NjI2NSwic3ViIjoidG9tMkBnbWFpbC5jb20gIiwiYXBwX2lkIjoxLCJpZCI6IjQiLCJlbWFpbCI6InRvbTJAZ21haWwuY29tICJ9.I1nkGW192iD0Vs995tSmMWMCsa-mbQ2PrH0YBkferdE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"password\":\"321\",\n\"additional\":\"4566\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/api/account"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/password Copy",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTg3ODI2NzAsImlhdCI6MTY1ODY5NjI2NSwic3ViIjoidG9tMkBnbWFpbC5jb20gIiwiYXBwX2lkIjoxLCJpZCI6IjQiLCJlbWFpbCI6InRvbTJAZ21haWwuY29tICJ9.I1nkGW192iD0Vs995tSmMWMCsa-mbQ2PrH0YBkferdE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"my  secret\",\n\"password\":\"another value\",\n\"link\":\"google2.com\",\n\"description\":\"my description\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/api/password"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/password",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTg3ODI2NzAsImlhdCI6MTY1ODY5NjI2NSwic3ViIjoidG9tMkBnbWFpbC5jb20gIiwiYXBwX2lkIjoxLCJpZCI6IjQiLCJlbWFpbCI6InRvbTJAZ21haWwuY29tICJ9.I1nkGW192iD0Vs995tSmMWMCsa-mbQ2PrH0YBkferdE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"my second secret\",\n\"password\":\"secret2 value\",\n\"link\":\"google2.com\",\n\"description\":\"my description\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/api/password"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/password Copy 2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTg3ODI2NzAsImlhdCI6MTY1ODY5NjI2NSwic3ViIjoidG9tMkBnbWFpbC5jb20gIiwiYXBwX2lkIjoxLCJpZCI6IjQiLCJlbWFpbCI6InRvbTJAZ21haWwuY29tICJ9.I1nkGW192iD0Vs995tSmMWMCsa-mbQ2PrH0YBkferdE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\" :2,\n    \"name\":\"my second secret up\",\n\"password\":\"secret2 value up\",\n\"link\":\"google2.com\",\n\"description\":\"my description up\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/api/password"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/passwords",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTg3ODI2NzAsImlhdCI6MTY1ODY5NjI2NSwic3ViIjoidG9tMkBnbWFpbC5jb20gIiwiYXBwX2lkIjoxLCJpZCI6IjQiLCJlbWFpbCI6InRvbTJAZ21haWwuY29tICJ9.I1nkGW192iD0Vs995tSmMWMCsa-mbQ2PrH0YBkferdE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"jwttoken\":\"gdghdfgjggdkfgdfklghjdfruiwlvmcv674dvbbgd\",\n\"password\":\"321\",\n\"additional\":\"4566\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/api/passwords"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/password?id=2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTg3ODI2NzAsImlhdCI6MTY1ODY5NjI2NSwic3ViIjoidG9tMkBnbWFpbC5jb20gIiwiYXBwX2lkIjoxLCJpZCI6IjQiLCJlbWFpbCI6InRvbTJAZ21haWwuY29tICJ9.I1nkGW192iD0Vs995tSmMWMCsa-mbQ2PrH0YBkferdE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/password?id=3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"password"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/message",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTg3ODE2NDgsImlhdCI6MTY1ODY5NTI0Mywic3ViIjoidG9tQGdtYWlsLmNvbSAiLCJhcHBfaWQiOjEsImlkIjoiMyIsImVtYWlsIjoidG9tQGdtYWlsLmNvbSAifQ.MY0eAJ8pFA6ytKaC2qmlMzd9p4xhGCa6psDX2toduyY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"content\":\"my question 1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/api/message"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/message",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTg3ODE2NDgsImlhdCI6MTY1ODY5NTI0Mywic3ViIjoidG9tQGdtYWlsLmNvbSAiLCJhcHBfaWQiOjEsImlkIjoiMyIsImVtYWlsIjoidG9tQGdtYWlsLmNvbSAifQ.MY0eAJ8pFA6ytKaC2qmlMzd9p4xhGCa6psDX2toduyY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/api/messages"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/password",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTg3ODI2NzAsImlhdCI6MTY1ODY5NjI2NSwic3ViIjoidG9tMkBnbWFpbC5jb20gIiwiYXBwX2lkIjoxLCJpZCI6IjQiLCJlbWFpbCI6InRvbTJAZ21haWwuY29tICJ9.I1nkGW192iD0Vs995tSmMWMCsa-mbQ2PrH0YBkferdE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/api/password"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/account",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTg3ODI2NzAsImlhdCI6MTY1ODY5NjI2NSwic3ViIjoidG9tMkBnbWFpbC5jb20gIiwiYXBwX2lkIjoxLCJpZCI6IjQiLCJlbWFpbCI6InRvbTJAZ21haWwuY29tICJ9.I1nkGW192iD0Vs995tSmMWMCsa-mbQ2PrH0YBkferdE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/api/account"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/adminlogin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"client_id\":\"gdghdfgjdkfgdfklghjdfruiwlvmcv674dvbbgd\",\n\"email\":\"admin@gmail.com \",\n\"password\":\"321\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/api/adminlogin"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/adminmessages",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTg3ODQyNDAsImlhdCI6MTY1ODY5NzgzNSwic3ViIjoiYWRtaW5AZ21haWwuY29tICIsImFwcF9pZCI6MSwiaWQiOiIxIiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20gIn0.mL_vzt2-5_pq_X5AZ7LJE2Ekh5UUiv_XFsOyza-H8ig",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/adminmessages?filter={\"replyed\":\"no\"}",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"adminmessages"
+					],
+					"query": [
+						{
+							"key": "filter",
+							"value": "{\"replyed\":\"no\"}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/adminreply",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTg3ODQyNDAsImlhdCI6MTY1ODY5NzgzNSwic3ViIjoiYWRtaW5AZ21haWwuY29tICIsImFwcF9pZCI6MSwiaWQiOiIxIiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20gIn0.mL_vzt2-5_pq_X5AZ7LJE2Ekh5UUiv_XFsOyza-H8ig",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":2,\n\"reply\":\"my reply\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/api/adminreply"
+			},
+			"response": []
+		}
+	]
+}
